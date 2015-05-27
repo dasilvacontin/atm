@@ -1,8 +1,13 @@
 class Atm
+  STARTING_BALANCE = 100.0
 
   def initialize(filename = "balance.txt")
     @filename = filename
-    @balance = File.read(@filename).to_i
+    if File.exist? @filename
+        @balance = File.read(@filename).to_f
+    else
+        @balance = STARTING_BALANCE
+    end
   end
 
   def run
