@@ -3,7 +3,7 @@
 ## Specifications
 
 ### Read initial balance from file, or use constant
-- [ ] Write a cli script that starts by reading a customer’s bank balance from a file named `balance.txt`.
+- [x] Write a cli script that starts by reading a customer’s bank balance from a file named `balance.txt`.
 - [ ] This file contains a single line with the customer’s starting balance.
 - [ ] If the file does not exist, use a starting balance of 100.0, which must be a constant.
 
